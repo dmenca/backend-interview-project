@@ -1,0 +1,13 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(°Ê¸ 
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õ²×ßıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ş¶çşÿÿÿÿ
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+O
+java:S2274":Remove this call to "wait" or move it into a "while" loop.(ç£ŠM
+P
+java:S1128"3Remove this unused import 'java.net.URLConnection'.(š¿šó8´¡£ı/
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8‘Ã¢£ı/
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ú«¹şÿÿÿÿ
