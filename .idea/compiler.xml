@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javabasic" />
+        <module name="java-basic" />
         <module name="leetcode" />
+        <module name="javabasic" />
         <module name="designpatterns" />
+        <module name="design-patterns" />
       </profile>
     </annotationProcessing>
   </component>
