@@ -15,7 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="74627cec-31cc-440e-8949-05947ff5e51e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/statics/DebugInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/statics/DebugInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/proxy.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/proxy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/statics/DebugInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/dynamic/DebugInvocationHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +157,13 @@
       <recent name="com.demnca.java.basic.proxy.dynamic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DebugInvocationHandler">
-    <configuration name="DebugInvocationHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.statics.DebugInvocationHandler" />
+  <component name="RunManager" selected="Application.CglibTest">
+    <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.CglibTest" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.proxy.statics.*" />
+          <option name="PATTERN" value="com.demnca.java.basic.proxy.dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,19 +171,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpDownloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HttpDownloader" />
-      <module name="designpatterns" />
+    <configuration name="DebugInvocationHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.DebugInvocationHandler" />
+      <module name="java-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demnca.java.basic.proxy.dynamic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.threadpool.Test1" />
-      <module name="javabasic" />
+    <configuration name="SmsProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.statics.SmsProxy" />
+      <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.threadpool.*" />
+          <option name="PATTERN" value="com.demnca.java.basic.proxy.statics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,12 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadRunTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.threadpool.ThreadRunTest" />
-      <module name="javabasic" />
+    <configuration name="com.demnca.java.basic.proxy.dynamic.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.Test1" />
+      <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.threadpool.*" />
+          <option name="PATTERN" value="com.demnca.java.basic.proxy.dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CglibTest" />
+        <item itemvalue="Application.SmsProxy" />
+        <item itemvalue="Application.com.demnca.java.basic.proxy.dynamic.Test1" />
         <item itemvalue="Application.DebugInvocationHandler" />
         <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.HttpDownloader" />
-        <item itemvalue="Application.ThreadRunTest" />
-        <item itemvalue="Application.Test1" />
       </list>
     </recent_temporary>
   </component>

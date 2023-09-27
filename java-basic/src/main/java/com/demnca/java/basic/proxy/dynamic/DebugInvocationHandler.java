@@ -1,8 +1,7 @@
-package com.demnca.java.basic.proxy.statics;
+package com.demnca.java.basic.proxy.dynamic;
 
 import com.demnca.java.basic.proxy.vo.Animal;
 import com.demnca.java.basic.proxy.vo.Cat;
-import jdk.nashorn.internal.runtime.Debug;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
