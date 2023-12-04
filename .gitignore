@@ -2,7 +2,7 @@
 .classpath
 .project
 .settings/
-.idea/
+.idea/*
 */target/*
 *.iml
 */overlays/*
