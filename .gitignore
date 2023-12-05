@@ -7,8 +7,10 @@
 *.iml
 */overlays/*
 *.iml
+.idea
 *.class
 logs/
 .DS_Store
+.lib
 
 dependency-reduced-pom.xml

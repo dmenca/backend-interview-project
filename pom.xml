@@ -12,7 +12,9 @@
         <module>leetcode</module>
         <module>java-basic</module>
         <module>design-patterns</module>
+        <module>spi-service-provider-interface</module>
     </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
