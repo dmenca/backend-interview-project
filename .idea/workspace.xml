@@ -13,11 +13,9 @@
     <bookmark url="file://$PROJECT_DIR$/../sc6.0/whale-profile/profile-archives/src/main/java/com/sensetime/iva/whale/profile/archives/controller/PersonArchivesController.java" description="public BaseResult&lt;PersonArchiveBatchDeleteResponse..." line="319" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74627cec-31cc-440e-8949-05947ff5e51e" name="Default Changelist" comment="">
+    <list default="true" id="74627cec-31cc-440e-8949-05947ff5e51e" name="Default Changelist" comment="feat: 添加leetcode爬楼梯">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/proxy.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/proxy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/statics/DebugInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/src/main/java/com/demnca/java/basic/proxy/dynamic/DebugInvocationHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,16 +138,24 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/project/whale-search/pom.xml&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/project/backend-interview-project/lib&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\project\backend-interview-project\lib" />
       <recent name="G:\project\backend-interview-project" />
       <recent name="G:\project\backend-interview-project\java-basic\static\threadpool" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\project\backend-interview-project\java-basic" />
+      <recent name="G:\project\backend-interview-project\java-basic\images" />
+      <recent name="G:\project\backend-interview-project\java-basic\docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.demnca.java.basic.threadpool" />
@@ -157,7 +163,7 @@
       <recent name="com.demnca.java.basic.proxy.dynamic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CglibTest">
+  <component name="RunManager" selected="Application.Solution70">
     <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.CglibTest" />
       <module name="java-basic" />
@@ -171,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DebugInvocationHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.DebugInvocationHandler" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.spi.Main" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.proxy.dynamic.*" />
+          <option name="PATTERN" value="com.demnca.java.basic.spi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmsProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.statics.SmsProxy" />
-      <module name="java-basic" />
+    <configuration name="Solution200" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.leetcode.Solution200" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.proxy.statics.*" />
+          <option name="PATTERN" value="com.dmenca.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,12 +203,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.threadpool.Test2" />
-      <module name="javabasic" />
+    <configuration name="Solution70" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.leetcode.Solution70" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.threadpool.*" />
+          <option name="PATTERN" value="com.dmenca.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,12 +216,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.demnca.java.basic.proxy.dynamic.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.Test1" />
-      <module name="java-basic" />
+    <configuration name="com.dmenca.spi.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.spi.Main" />
+      <module name="spi-service-provider-interface" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.proxy.dynamic.*" />
+          <option name="PATTERN" value="com.dmenca.spi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -225,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution70" />
+        <item itemvalue="Application.Solution200" />
+        <item itemvalue="Application.com.dmenca.spi.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CglibTest" />
-        <item itemvalue="Application.SmsProxy" />
-        <item itemvalue="Application.com.demnca.java.basic.proxy.dynamic.Test1" />
-        <item itemvalue="Application.DebugInvocationHandler" />
-        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -263,6 +269,28 @@
       <workItem from="1660788029753" duration="588000" />
       <workItem from="1661765625281" duration="728000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 添加动态代理、静态代理代码">
+      <created>1701751077154</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701751077154</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 添加leetcode岛屿数量">
+      <created>1701752715276</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701752715276</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 添加leetcode爬楼梯">
+      <created>1701753197924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701753197924</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -323,6 +351,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 添加动态代理、静态代理代码" />
+    <MESSAGE value="feat: 添加leetcode岛屿数量" />
+    <MESSAGE value="feat: 添加leetcode爬楼梯" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加leetcode爬楼梯" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spi-service-provider-interface/src/main/java/com/dmenca/spi/LoggerService.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ServiceLoader.java</url>
+          <line>223</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/pom.xml" />
