@@ -20,11 +20,14 @@ public class Solution141 {
         ListNode slow = head;
         while(quick!=null && slow!=null){
             quick = quick.next;
-            if(quick.next == null){
+            // 快指针走两步
+            if(quick==null||quick.next == null){
                 return false;
             }
             quick = quick.next.next;
+            //慢指针走一步
             slow = slow.next;
+            // 如果快指针能够遇到慢指针 且都不是空 则代表有环
             if(quick!=null&&slow!=null&&quick==slow){
                 return true;
             }
