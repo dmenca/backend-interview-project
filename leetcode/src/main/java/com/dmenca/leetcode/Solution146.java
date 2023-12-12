@@ -1,5 +1,8 @@
 package com.dmenca.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 实现一个LRU缓存（最近最少使用），初始化缓存容量
  *  双向链表+哈希表实现，双向链表来保证最近最少使用，头部存储最近使用，尾部存储最少使用。
@@ -12,10 +15,23 @@ public class Solution146 {
             public int value;
             public Node prev;
             public Node next;
-
         }
-        public LRUCache(int capacity){
 
+        private Map<String,Node> hashMap = new HashMap<>();
+
+        private Node head,tail;
+
+        private int capacity;
+
+        private int size;
+
+        public LRUCache(int capacity){
+            this.capacity = capacity;
+            this.size = 0;
+            head = new Node();
+            tail = new Node();
+            head.next = tail;
+            tail.prev = head;
         }
 
         /**
