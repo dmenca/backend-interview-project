@@ -23,6 +23,8 @@ public class SetTest {
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
+        // LinkedHashSets是构造方法中用的new LinkedHashMap来保证插入元素有序的
+        // https://mrbird.cc/LinkedHashSet%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.html
         LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add(4);
         linkedHashSet.add(2);
