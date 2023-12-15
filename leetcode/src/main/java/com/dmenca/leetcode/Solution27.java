@@ -23,7 +23,7 @@ public class Solution27 {
      * @param val
      * @return
      */
-    public static int removeElement1(int[] nums, int val) {
+    public static int removeElement(int[] nums, int val) {
         int left = 0;
         int right = nums.length;
         while (left<right){
@@ -35,28 +35,6 @@ public class Solution27 {
             }
         }
         return left;
-    }
-    public static int removeElement(int[] nums, int val) {
-        int count=0;
-        // 计算数量
-        for (int i =0;i<nums.length;i++){
-            if (val == nums[i]){
-                count++;
-            }
-        }
-        int i=0,cnt=0,j=nums.length-1;
-        while (cnt<count&&i<nums.length&&j>=0){
-            if (nums[i]==val){
-                while (nums[j]==val&&j>0){
-                    j--;
-                }
-                nums[i]=nums[j];
-                j--;
-                cnt++;
-            }
-            i++;
-        }
-        return nums.length-count;
     }
 
     public static void main(String[] args) {
