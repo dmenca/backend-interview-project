@@ -100,3 +100,39 @@ ThreadPoolExecutor创建的核心参数
 * DelayedWorkQueue（延迟阻塞队列）：ScheduledThreadPool 和 SingleThreadScheduledExecutor 。DelayedWorkQueue 的内部元素并不是按照放入的时间排序，而是会按照延迟的时间长短对任务进行排序，内部采用的是“堆”的数据结构，可以保证每次出队的任务都是当前队列中执行时间最靠前的。DelayedWorkQueue 添加元素满了之后会自动扩容原来容量的 1/2，即永远不会阻塞，最大扩容可达 Integer.MAX_VALUE，所以最多只能创建核心线程数的线程。
 
 
+### Semaphore
+Semaphore 是一种用于控制对共享资源的访问的同步工具。Semaphore 维护了一个许可的计数器，线程可以通过 acquire() 方法获取许可，通过 release() 方法释放许可.
+如果许可计数器为正数，则 acquire() 将成功，将许可计数器减 1；如果许可计数器为零，则 acquire() 将阻塞，直到有一个许可可用为止。
+
+
+Semaphore 在多线程编程中有许多应用场景，其中一些包括：
+
+* 资源池管理：Semaphore 可以用于管理有限资源池，比如数据库连接池、线程池等。Semaphore 的许可数量可以表示资源池中可用资源的数量，每个线程在使用资源前需要获取许可，使用完后释放许可，这样可以控制资源的并发访问数量，避免资源被过度消耗。
+
+* 流量控制：Semaphore 可以用于限制对某些共享资源的并发访问数量，比如限制同时访问某个文件或某个网络连接的线程数量，防止过多的线程同时访问导致性能下降或系统崩溃。
+
+* 线程同步：Semaphore 可以用于线程间的同步，比如某些场景下需要保证一组线程按照一定顺序执行，可以使用 Semaphore 控制线程的执行顺序。
+
+* 信号灯控制：Semaphore 在模拟信号灯的场景中也很有用。比如控制交叉路口的车辆流量，Semaphore 可以表示不同方向上的车辆流量，通过控制不同方向的许可数量来实现交通流量的控制。
+
+* 限流：在某些场景下，为了保护系统免受过多请求的影响，可以使用 Semaphore 来限制请求的并发数量，防止系统被过载。
+
+### CountDownLatch
+CountDownLatch 的作用是允许一个或多个线程等待其他线程完成操作后再继续执行。允许count个线程阻塞在一个地方，直到所有线程的任务都执行完成。
+CountDownLatch 维护了一个计数器，该计数器由一个正整数初始化。线程调用 CountDownLatch 的 await() 方法会阻塞，直到计数器减到零。其他线程可以通过调用 CountDownLatch 的 countDown() 方法来将计数器减一。一旦计数器减到零，所有等待的线程都会被释放，可以继续执行。
+CountDownLatch使用完毕后不能被重复使用。
+
+CountDownLatch的使用可以被CompletableFuture的allOf、join使用代替。
+
+### CycleBarrier
+CycleBarrier和CountDownLatch类似,比CountDownLatch功能复杂。它允许一组线程相互等待，直到达到某个公共屏障点（barrier），然后同时继续执行。
+CountDownLatch 是一次性的，一旦计数器减到零，就无法重置；而 CyclicBarrier 是可循环使用的，一旦所有线程都到达屏障点，它会自动重置计数器，并且所有线程可以继续执行，而不需要创建新的 CyclicBarrier 实例。
+
+CyclicBarrier 主要用于以下场景：
+
+* 任务分解： 当一个任务可以分解成多个子任务，每个子任务可以独立执行，但最终需要在某个屏障点进行汇总或协作时，可以使用 CyclicBarrier 来实现线程之间的同步等待。
+
+* 数据处理： 当多个线程同时处理数据，但需要等待所有线程完成各自的数据处理后再进行下一步操作时，可以使用 CyclicBarrier。
+
+* 多阶段计算： 当计算过程分为多个阶段，每个阶段的计算都是相互独立的，但在进入下一阶段之前需要等待所有线程完成当前阶段的计算时，可以使用 CyclicBarrier 来协调各个阶段之间的计算。
+
