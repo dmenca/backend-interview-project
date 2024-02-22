@@ -10,6 +10,7 @@ volatile 关键字能保证数据的可见性，防止 JVM 的指令重排序,�
 ### 悲观锁
 假设最坏的情况，认为共享资源每次被访问时都会出现问题，因此每次在获取资源操作的时候都会上锁，这样其他线程想要拿到这个资源就会阻塞直到锁被上一个持有者释放。
 synchronized和ReentrantLock等独占锁就是悲观锁思想的实现。
+悲观锁的主要思想是在操作数据之前，先锁定数据，以防止其他线程同时对数据进行修改。
 ```java
 public void performSynchronisedTask() {
     synchronized (this) {

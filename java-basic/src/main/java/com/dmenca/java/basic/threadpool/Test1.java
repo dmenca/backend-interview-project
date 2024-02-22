@@ -15,7 +15,7 @@ public class Test1 {
                 new ThreadPoolExecutor.CallerRunsPolicy());
         for (int i = 0 ;i < 1000; i++){
             Integer x = i ;
-            threadPoolExecutor.submit(()->{
+            threadPoolExecutor.execute(()->{
                 System.out.println(Thread.currentThread()+"  -  i is :" + x);
                 try {
                     Thread.sleep(3000);
