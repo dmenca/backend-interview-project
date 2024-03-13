@@ -71,6 +71,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.27</version> <!-- 使用最新的版本 -->
+        </dependency>
     </dependencies>
 
 </project>

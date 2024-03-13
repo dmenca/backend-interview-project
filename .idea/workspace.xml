@@ -13,9 +13,9 @@
     <bookmark url="file://$PROJECT_DIR$/../sc6.0/whale-profile/profile-archives/src/main/java/com/sensetime/iva/whale/profile/archives/controller/PersonArchivesController.java" description="public BaseResult&lt;PersonArchiveBatchDeleteResponse..." line="319" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74627cec-31cc-440e-8949-05947ff5e51e" name="Default Changelist" comment="feat: 添加leetcode爬楼梯">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="74627cec-31cc-440e-8949-05947ff5e51e" name="Default Changelist" comment="feat: 增加Spring SentinelResource注解测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,19 +135,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/project/backend-interview-project/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "G:/project/backend-interview-project/java-basic/src/main/java/com/dmenca/java/basic/aop",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\project\backend-interview-project\java-basic\src\main\java\com\dmenca\java\basic\aop" />
       <recent name="G:\project\backend-interview-project\lib" />
       <recent name="G:\project\backend-interview-project" />
       <recent name="G:\project\backend-interview-project\java-basic\static\threadpool" />
@@ -158,18 +159,45 @@
       <recent name="G:\project\backend-interview-project\java-basic\docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dmenca.leetcode" />
       <recent name="com.demnca.java.basic.threadpool" />
       <recent name="" />
       <recent name="com.demnca.java.basic.proxy.dynamic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution70">
+  <component name="RunManager" selected="Application.AopTest2">
+    <configuration name="AopTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.aop.AopTest1" />
+      <module name="java-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmenca.java.basic.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.aop.AopTest2" />
+      <module name="java-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmenca.java.basic.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.proxy.dynamic.CglibTest" />
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.proxy.dynamic.CglibTest" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.proxy.dynamic.*" />
+          <option name="PATTERN" value="com.dmenca.java.basic.proxy.dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,12 +205,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demnca.java.basic.spi.Main" />
+    <configuration name="Demo1Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.Demo1Application" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demnca.java.basic.spi.*" />
+          <option name="PATTERN" value="com.dmenca.java.basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,12 +218,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution200" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dmenca.leetcode.Solution200" />
-      <module name="leetcode" />
+    <configuration name="MySQLDataMock1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.mock.MySQLDataMock1" />
+      <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dmenca.leetcode.*" />
+          <option name="PATTERN" value="com.dmenca.java.basic.mock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,39 +231,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution70" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dmenca.leetcode.Solution70" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dmenca.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.dmenca.spi.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dmenca.spi.Main" />
-      <module name="spi-service-provider-interface" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dmenca.spi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.AopTest1" />
+      <item itemvalue="Application.AopTest2" />
+      <item itemvalue="Application.CglibTest" />
+      <item itemvalue="Application.MySQLDataMock1" />
+      <item itemvalue="Application.Demo1Application" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution70" />
-        <item itemvalue="Application.Solution200" />
-        <item itemvalue="Application.com.dmenca.spi.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AopTest2" />
+        <item itemvalue="Application.AopTest1" />
         <item itemvalue="Application.CglibTest" />
+        <item itemvalue="Application.MySQLDataMock1" />
+        <item itemvalue="Application.Demo1Application" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +299,126 @@
       <option name="project" value="LOCAL" />
       <updated>1701753197924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 添加leetcode 最小路径和">
+      <created>1701756154012</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701756154012</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 添加leetcode 最小路径和">
+      <created>1701756162891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701756162891</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: 添加leetcode 链表两数相加、环形链表">
+      <created>1701848439109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701848439109</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: 添加leetcode 翻转二叉树">
+      <created>1701848849742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701848849742</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: 添加leetcode 断二叉树是否轴对称">
+      <created>1701850567589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701850567589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: 添加leetcode 打家劫舍问题">
+      <created>1701943364247</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701943364247</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: 添加leetcode 第K个大的数">
+      <created>1702276933018</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702276933018</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: 添加leetcode 双指针回文串">
+      <created>1702370956375</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702370956375</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: 添加leetcode LRU缓存">
+      <created>1702375191311</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702375191311</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: 添加leetcode LRU缓存">
+      <created>1702377438228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702377438228</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: 添加集合相关代码测试">
+      <created>1702547001111</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702547001112</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: 添加集合相关代码测试">
+      <created>1702547880704</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702547880704</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: 添加集合相关代码测试">
+      <created>1702633708497</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702633708497</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: 添加并发相关代码测试">
+      <created>1708417599866</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708417599866</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: 添加并发相关代码测试">
+      <created>1708587029144</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708587029144</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: 添加排序代码测试">
+      <created>1708674099478</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708674099478</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: 增加Spring SentinelResource注解测试">
+      <created>1708930684695</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708930684695</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -356,7 +484,19 @@
     <MESSAGE value="feat: 添加动态代理、静态代理代码" />
     <MESSAGE value="feat: 添加leetcode岛屿数量" />
     <MESSAGE value="feat: 添加leetcode爬楼梯" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加leetcode爬楼梯" />
+    <MESSAGE value="feat: 添加leetcode 最小路径和" />
+    <MESSAGE value="feat: 添加leetcode 链表两数相加、环形链表" />
+    <MESSAGE value="feat: 添加leetcode 翻转二叉树" />
+    <MESSAGE value="feat: 添加leetcode 断二叉树是否轴对称" />
+    <MESSAGE value="feat: 添加leetcode 打家劫舍问题" />
+    <MESSAGE value="feat: 添加leetcode 第K个大的数" />
+    <MESSAGE value="feat: 添加leetcode 双指针回文串" />
+    <MESSAGE value="feat: 添加leetcode LRU缓存" />
+    <MESSAGE value="feat: 添加集合相关代码测试" />
+    <MESSAGE value="feat: 添加并发相关代码测试" />
+    <MESSAGE value="feat: 添加排序代码测试" />
+    <MESSAGE value="feat: 增加Spring SentinelResource注解测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加Spring SentinelResource注解测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -367,9 +507,24 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ServiceLoader.java</url>
-          <line>223</line>
-          <option name="timeStamp" value="4" />
+          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/CyclicBarrier.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-basic/src/main/java/com/dmenca/java/basic/sort/QuickSort.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-basic/src/main/java/com/dmenca/java/basic/aop/AopTest2.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../respo/org/springframework/spring-aop/5.3.18/spring-aop-5.3.18.jar!/org/springframework/aop/framework/ProxyCreatorSupport.class</url>
+          <line>46</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
