@@ -13,6 +13,7 @@
         <module>java-basic</module>
         <module>design-patterns</module>
         <module>spi-service-provider-interface</module>
+        <module>flink-study</module>
     </modules>
 
     <dependencyManagement>

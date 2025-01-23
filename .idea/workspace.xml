@@ -14,8 +14,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74627cec-31cc-440e-8949-05947ff5e51e" name="Default Changelist" comment="feat: 增加Spring SentinelResource注解测试">
+      <change afterPath="$PROJECT_DIR$/flink-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-study/src/main/java/com/dmenca/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-study/src/test/java/com/dmenca/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic/src/main/java/com/dmenca/java/basic/generics/PortraitBaseVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +111,9 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="570" />
     <option name="y" value="88" />
@@ -137,13 +146,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "G:/project/backend-interview-project/java-basic/src/main/java/com/dmenca/java/basic/aop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/git_project/business-component/centurio-apis/pom.xml",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+    "settings.editor.selected.configurable": "build.tools",
+    "应用程序.FlinkTest.executor": "Run",
+    "应用程序.WordCountKafkaInStdOut.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -159,39 +175,14 @@
       <recent name="G:\project\backend-interview-project\java-basic\docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dmenca.java.basic.kafka" />
       <recent name="com.dmenca.leetcode" />
       <recent name="com.demnca.java.basic.threadpool" />
       <recent name="" />
       <recent name="com.demnca.java.basic.proxy.dynamic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AopTest2">
-    <configuration name="AopTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.aop.AopTest1" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dmenca.java.basic.aop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AopTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.aop.AopTest2" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dmenca.java.basic.aop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.WordCountKafkaInStdOut">
     <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.proxy.dynamic.CglibTest" />
       <module name="java-basic" />
@@ -218,6 +209,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FlinkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.flink.examples.FlinkTest" />
+      <module name="flink-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmenca.flink.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MySQLDataMock1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dmenca.java.basic.mock.MySQLDataMock1" />
       <module name="java-basic" />
@@ -231,20 +236,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCountKafkaInStdOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.dmenca.flink.examples.WordCountKafkaInStdOut" />
+      <module name="flink-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmenca.flink.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.AopTest1" />
-      <item itemvalue="Application.AopTest2" />
-      <item itemvalue="Application.CglibTest" />
-      <item itemvalue="Application.MySQLDataMock1" />
-      <item itemvalue="Application.Demo1Application" />
+      <item itemvalue="应用程序.FlinkTest" />
+      <item itemvalue="应用程序.WordCountKafkaInStdOut" />
+      <item itemvalue="应用程序.CglibTest" />
+      <item itemvalue="应用程序.Demo1Application" />
+      <item itemvalue="应用程序.MySQLDataMock1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AopTest2" />
-        <item itemvalue="Application.AopTest1" />
-        <item itemvalue="Application.CglibTest" />
-        <item itemvalue="Application.MySQLDataMock1" />
-        <item itemvalue="Application.Demo1Application" />
+        <item itemvalue="应用程序.WordCountKafkaInStdOut" />
+        <item itemvalue="应用程序.FlinkTest" />
       </list>
     </recent_temporary>
   </component>
