@@ -66,12 +66,15 @@ public class WordCountKafkaInStdOut {
                     }
                 })
                 .returns(Types.TUPLE(Types.STRING, Types.INT))
+                // 相同给的单词分到一组
                 .keyBy(tuple -> tuple.f0)
                 // 使用timewindow则不进入统计
-                // 使用processTime的时间窗口
+                // 使用processTime的时间窗口 每5秒执行一次
                 .window(TumblingProcessingTimeWindows.of(Time.seconds(5)))
+                // 相同的单词在一组 对第二项求和就是出现的总次数
                 .sum(1);
 
+        // sink
         sumDataStream.print("sum data stream");
 
         env.execute("kafka streaming word count");
