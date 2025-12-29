@@ -58,11 +58,69 @@
 
 ## MySQL的四种隔离级别
 
-| 隔离级别|	脏读 | 不可重复读 |	幻读 |
-|----|----|----|----|
-|READ UNCOMMITTED（读未提交）|❌| ❌|	❌|
-|READ COMMITTED（读已提交））|✅|❌	|❌|
-|REPEATABLE READ（可重复读）|✅|	✅|❌|
-|SERIALIZABLE（串行化）|✅|	✅|✅|
+| 隔离级别|	脏读 | 不可重复读 |	幻读 | 说明|
+|----|----|----|----|---|
+|READ UNCOMMITTED（读未提交）|❌| ❌|	❌|最低级别，允许读取未提交的事务，性能最好，有并发问题|
+|READ COMMITTED（读已提交））|✅|❌	|❌|只能读取已经提交的事务，解决脏读。但同一事务多次读取可能结果不一致（不可重复读）|
+|REPEATABLE READ（可重复读）|✅|	✅|❌|MySQL 默认级别，保证同一事务内多次读取数据一致，解决脏读、不可重复读；通过 MVCC 避免幻读（InnoDB 特有）。|
+|SERIALIZABLE（串行化）|✅|	✅|✅|最高级别，事务串行执行（加表级锁），完全隔离，无并发问题，但性能极差。|
 
+1.READ UNCOMMITTED（读未提交）
+```sql
+-- 会话1
+START TRANSACTION;
+UPDATE user SET balance = 1000 WHERE id = 1; -- 未提交
+
+-- 会话2（隔离级别设为 READ UNCOMMITTED）
+START TRANSACTION;
+SELECT balance FROM user WHERE id = 1; -- 读取到 1000（脏读）
+
+-- 会话1回滚
+ROLLBACK;
+
+-- 会话2再次查询
+SELECT balance FROM user WHERE id = 1; -- 回到原数值，之前读的是脏数据
+```
+
+2. READ COMMITTED（读已提交）
+```sql
+-- 会话1
+START TRANSACTION;
+UPDATE user SET balance = 1000 WHERE id = 1;
+COMMIT;
+
+-- 会话2（隔离级别设为 READ COMMITTED）
+START TRANSACTION;
+SELECT balance FROM user WHERE id = 1; -- 读旧值（如 0）
+-- 会话1提交后
+SELECT balance FROM user WHERE id = 1; -- 读新值 1000（不可重复读）
+COMMIT;
+```
+3. REPEATABLE READ（可重复读，MySQL 默认）
+```sql
+-- 会话1（隔离级别 REPEATABLE READ）
+START TRANSACTION;
+SELECT balance FROM user WHERE id = 1; -- 读旧值 0
+
+-- 会话2
+UPDATE user SET balance = 1000 WHERE id = 1;
+COMMIT;
+
+-- 会话1再次查询
+SELECT balance FROM user WHERE id = 1; -- 仍读 0（可重复读）
+COMMIT;
+
+-- 会话1提交后查询
+SELECT balance FROM user WHERE id = 1; -- 读 1000
+```
+
+4. SERIALIZABLE（串行化）
+```sql
+-- 会话1（隔离级别 SERIALIZABLE）
+START TRANSACTION;
+SELECT * FROM user WHERE id > 0; -- 加表级锁
+
+-- 会话2
+INSERT INTO user (id, balance) VALUES (2, 500); -- 阻塞，直到会话1提交/回滚
+```
 
