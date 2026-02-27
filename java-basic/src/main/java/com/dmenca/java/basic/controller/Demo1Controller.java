@@ -3,11 +3,12 @@ package com.dmenca.java.basic.controller;
 
 
 import com.dmenca.java.basic.sentinel.TestService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author Eric Zhao
@@ -15,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Demo1Controller {
 
-    @Autowired
+
+    @Resource
     private TestService service;
 
     @GetMapping("/foo")

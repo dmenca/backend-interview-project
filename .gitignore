@@ -12,5 +12,6 @@
 logs/
 .DS_Store
 .lib
+.idea
 
 dependency-reduced-pom.xml
