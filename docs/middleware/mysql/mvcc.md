@@ -42,16 +42,23 @@ InnoDB 会为表中每行数据（除用户定义字段外）自动添加 3 个�
 **3. Read View（读视图）**
 ** 作用：事务执行快照读时，生成一个 “可见性规则”，判断版本链中哪个版本对当前事务可见；
 ** 生成时机：
-可重复读（RR）：事务中第一次执行快照读时生成，后续所有快照读复用该 Read View（保证可重复读）；
-
+可重复读（RR）：**开启事务时不会生成，只有在事务中第一次执行快照读(普通select语句)时生成，后续所有快照读复用该 Read View（保证可重复读）**；
 读已提交（RC）：事务中每次执行快照读都重新生成 Read View（只能保证读已提交）；
 ** 核心属性（Read View 包含 4 个关键值）
 |属性|	含义|
 |--|--|
 |m_ids|	当前活跃（未提交）的事务 ID 列表|
-|min_trx_id|	m_ids中的最小事务 ID|
+|min_trx_id|	m_ids中的最小事务 ID，如果m_ids列表为空，则min_trx_id等于max_trx_id|
 |max_trx_id|	系统下一个要分配的事务 ID（即当前最大事务 ID+1）|
 |creator_trx_id|	生成该 Read View 的事务 ID（当前事务 ID）|
+
+**普通的select语句不会创建creator_trx_id，一个事务只有发生写操作（增删改）或者显示调用select ... for update或者select ... lock in share mode 语句才会被分配唯一的、递增的trx_id**。
+
+因此只读事务不会有trx_id，读写事务在进行写操作才会有trx_id。
+
+
+**max_trx_id 不等于 creator_trx_id +1**。举例：事务A先执行update语句生成trx_id为1,后来事务B和C执行insert语句生成trx_id为2和3并且提交，此时事务A再执行select语句创建第一个ReadView，creator_trx_id为1，但是min_trx_id等于max_trx_id为最大事务Id3+1等于4，事务B和事务C提交的内容均可见。
+
 
 
 ## 三、MVCC 的核心规则：版本可见性判断
@@ -60,9 +67,10 @@ InnoDB 会为表中每行数据（除用户定义字段外）自动添加 3 个�
 * trx_id >= max_trx_id：修改该版本的事务是未来事务（还未启动），不可见；
 * min_trx_id ≤ trx_id < max_trx_id：
  若trx_id在m_ids中（事务未提交），不可见；
-
  若trx_id不在m_ids中（事务已提交），可见；
 特殊情况：trx_id = creator_trx_id（当前事务自己修改的数据），可见。
+
+
 
 **如果当前版本不可见，则通过DB_ROLL_PTR遍历版本链，直到找到第一个可见版本；若遍历完无可见版本，则返回空。**
 
@@ -89,3 +97,7 @@ SELECT * FROM user WHERE id=1 FOR UPDATE;
 * 核心优势：快照读不阻塞写，写不阻塞读，提升并发性能；
 * 核心作用：实现 InnoDB 的读已提交（RC）和可重复读（RR）隔离级别；
 * 边界：仅作用于快照读，当前读仍依赖锁机制。
+
+## 6.问题
+### 既然MVCC能解决幻读，为什么还需要间隙锁？
+**MVCC只能解决"快照读"下的幻读，而无法解决"当前读"下的幻读**，为了保证数据库的各种操作下能够维持一致，因此需要间隙锁（Gap Lock）
